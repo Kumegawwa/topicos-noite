@@ -6,8 +6,8 @@ var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
 
 List<Curso> cursos = new List<Curso>() {
-    new Curso(1, "Ciência da Computação "),
-    new Curso(2, "Medicina")
+    new Curso(id: 1, name: "Ciência da Computação"),
+    new Curso(id: 2, name: "Medicina")
 };
 
 app.MapGet("/", () => {
